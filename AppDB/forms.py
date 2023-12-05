@@ -5,7 +5,7 @@ from .models import *
 class VenderVehiculo(forms.ModelForm):
     class Meta:
         model = Vehiculo
-        fields = ["modelo_vehiculo", "ano_vehiculo", "precio"]
+        fields = ["modelo_vehiculo", "ano_vehiculo", "precio", "kilometros"]
         
 class Registrarse_Cliente(forms.ModelForm):
     class Meta:

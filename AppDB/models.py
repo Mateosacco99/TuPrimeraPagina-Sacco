@@ -10,6 +10,9 @@ class Cliente(models.Model):
 class Vehiculo(models.Model):
     modelo_vehiculo = models.CharField(max_length=30)
     ano_vehiculo = models.IntegerField()
+    kilometros = models.IntegerField()
     precio = models.IntegerField()
+    
+    
     
     
