@@ -6,6 +6,6 @@ from AppDB import models
 admin.site.register(models.Cliente)
 @admin.register(models.Vehiculo)
 class VehiculoAdmin(admin.ModelAdmin):
-    list_display = ("modelo_vehiculo", "ano_vehiculo", "precio")
-    list_filter = ("modelo_vehiculo", "precio")
-    search_fields = ("modelo_vehiculo", "precio")
+    list_display = ("modelo_vehiculo", "ano_vehiculo", "kilometros", "precio")
+    list_filter = ("modelo_vehiculo", "ano_vehiculo", "kilometros", "precio")
+    search_fields = ("modelo_vehiculo", "ano_vehiculo", "kilometros", "precio")
