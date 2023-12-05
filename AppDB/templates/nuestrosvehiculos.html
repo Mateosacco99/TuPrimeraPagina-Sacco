@@ -6,7 +6,8 @@
     {% for vehiculo in Vehiculos %}
     <li class="text-white-50">
       <a>{{ vehiculo.modelo_vehiculo }}</a>
-      ({{vehiculo.precio}})
+      ({{vehiculo.ano_vehiculo}})
+      USD {{vehiculo.precio}}
     </li>
     {% endfor %}
   </ul>
